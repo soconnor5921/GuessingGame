@@ -9,19 +9,18 @@ public class Main
 
     public static void main(String[] args)
     {
+        System.out.println("Type a number from 1-10");
         Scanner sc = new Scanner(System.in);
         int ans = sc.nextInt();
         int aiNum = generateNum();
 
-        if (ans == aiNum)
+        while(ans != aiNum)
         {
-            System.out.println(String.valueOf(aiNum));
-            System.out.println("Good Job");
+            System.out.println("Wrong answer, try again");
+            ans = sc.nextInt();
+
         }
-        else
-        {
-            System.out.println("Wrong, the number was " + aiNum);
-        }
+        System.out.println("Correct!");
 
     }
 }
