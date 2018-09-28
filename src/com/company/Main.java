@@ -9,7 +9,7 @@ public class Main
 
     public static void main(String[] args)
     {
-        System.out.println("Type a number from 1-10");
+        System.out.println("Type a number from 0-10");
         Scanner sc = new Scanner(System.in);
         int ans = sc.nextInt();
         int aiNum = generateNum();
